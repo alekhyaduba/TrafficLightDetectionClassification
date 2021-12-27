@@ -1,0 +1,12 @@
+Explore the option of Google Colab for training purpose. - done
+Explore Pytorch YOLO utilities - Not required
+Using the trained weights, write a logic to obtain the bounding box information. - Done (08/12)
+Build a CNN for the puporse of classification. - Done (10/12)
+Develop a method to create new dataset by cropping the images around the bounding box. 
+  - Util written to retrieve cropped images. - 08/12
+  - Read labels from dataset yaml and generate a file with image name and labels. Done on 09/12
+
+Retrain using https://github.com/AlexeyAB/darknet framework and test the results. - Done( 08/12)
+
+Run the Yolo and Classifier on Test data and record the accuracy of each.
+

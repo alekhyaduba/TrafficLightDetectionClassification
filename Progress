@@ -1,0 +1,32 @@
+Read the research paper and understood the results.
+Downloaded the Bosch data set for traffic lights.
+Learning about YOLO architecture.
+Downloaded the darknet YOLO framework and setted up the framework to train the custom dataset.
+Ran the framework and trained till 1000 images and saved the weights learnt so far.
+Started training with bosch data in google colab.
+
+The trained results were not able to detect on the test images- possibly because of error in creating the train.txt and test.txt files.
+Retraining the model with the dataset again. 
+
+The issue was with the framework, the training was not perfect but when a different framework from https://github.com/AlexeyAB/darknet was used, the same weights could detect the traffic lights.
+
+07/12 - 08/12
+Trained with Yolov4 with mAP of 19%.
+Forked the darknet repository to personal github as it was not possible to fork in tamu github.
+Made changes to the "detector.c", "image.c" files to provide a json file contained the Left_x, top_y, w and h of the image along with class and Image name details. THis will be used to crop images around the bounding box and create a new data set for the classfication CNN.
+Added json file reading functionality along with conversion to image objects with bounding box information. Will be used to crop the images to create new images and data set.
+Added required utils
+Implemented the util to extract cropped images of the taffic lights from the original image.
+
+
+09/12 - 10/12
+Trainined Yolo with map @0.5 25.27%
+Obtained json file of results containing the bounding box information of the images.
+Implemented the functionality to create a dataset of cropped images. 
+Matched the detected bounding boxes with the yaml file bounding box to read the original labels
+Created a dataframe consisting of names of cropped images along with their labels
+Created CNN model for training
+Tested the classification framework from end to end
+Trained the classification network for 50 epochs and achieved an accuracy of 80%.
+
+
