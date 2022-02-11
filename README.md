@@ -1,5 +1,5 @@
 # CSCE-643_TrafficLightDetection
-
+** This repository is a copy of the original work done as a part of my graduate course course work which is available  at https://github.tamu.edu/alekhya-duba/CSCE-643_TrafficLightDetection/ 
 Part 1-
 Yolo Training on Custom Dataset from Bosch- 
 Follow the Google Colab notebook for step by step guide : https://colab.research.google.com/drive/1CVyxNjKTFJ3IK6YC4L38Ix4Tr06irlCy?usp=sharing
